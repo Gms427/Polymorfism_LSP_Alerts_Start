@@ -16,6 +16,14 @@ namespace LSP
             RaiseSevereEvent("Heart rate is below 60");
         }
 
+        /*
+            En esta parte también podemos hacer uso del polimorfismo haciendo una interfaz que se llame IEvent,
+            que contaría con 2 implementaciones:
+
+            InformationEvent: Encargado de notificar un evento informativo
+
+            SevereEvent: Encargado de notificar un evento severo
+        */
         private static void RaiseInformationEvent(string eventName)
         {
             // Usamos el nombre "_event" porque "event" es una keyword.
